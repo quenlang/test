@@ -1,19 +1,12 @@
 package main
 
-var a string
+import (
+	"fmt"
+)
+
+var a uint32
 
 func main() {
-	a = "G"
-	print(a)
-	f1()
-}
-
-func f1() {
-	a := "O"
-	print(a)
-	f2()
-}
-
-func f2() {
-	print(a)
+	a = 1 << 20
+	fmt.Print("Value: %d\n", a)
 }
