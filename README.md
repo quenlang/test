@@ -11,5 +11,5 @@
 查看分支
 1、git branch -r
 
-学习地址：\n
-https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/06.2.md\n
+学习地址：
+https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/06.2.md
