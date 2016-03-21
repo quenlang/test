@@ -4,9 +4,27 @@ import (
 	"fmt"
 )
 
+type Base struct{}
+
+func (Base) Magic() {
+	fmt.Println("base magic")
+}
+
+func (self Base) MoreMagic() {
+	self.Magic()
+	self.Magic()
+}
+
+type Voodoo struct {
+	Base
+}
+
+func (Voodoo) Magic() {
+	fmt.Println("voodoo magic")
+}
+
 func main() {
-	a := [...]string{"a", "b", "c", "d"}
-	for i := range a {
-		fmt.Println("Array item", i, "is", a[i])
-	}
+	v := new(Voodoo)
+	v.Magic()
+	v.MoreMagic()
 }
